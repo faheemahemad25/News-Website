@@ -8,7 +8,7 @@ click to see https://faheemahemad25.github.io/News-Website/
 ## Features 📋
 ⚡️ Responsive\
 ⚡️ Search\
-⚡️ API EdgeCases Handling\
+⚡️ API EdgeCases Handling
 
  
 ## Tech Stack Used 🛠️

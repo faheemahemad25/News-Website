@@ -2,7 +2,7 @@
 click to see https://faheemahemad25.github.io/News-Website/
 <br>
 <br>
-<img src='./images/news-website.gif'>
+<img src='./images/news-website.gif' alt="news website gif ">
 
 
 ## Features 📋

@@ -2,7 +2,7 @@
 click to see https://faheemahemad25.github.io/News-Website/
 <br>
 <br>
-<img src='./images/news-website.gif' alt="news website gif ">
+<img src='./public/images/news-website.gif' alt="news website gif ">
 
 
 ## Features 📋
@@ -17,4 +17,6 @@ click to see https://faheemahemad25.github.io/News-Website/
 
 ## Contributor 🤝
 ### Faheem Ahemad
+
+<!-- to see preview of README.md Press Ctrl + Shift + V -->
 

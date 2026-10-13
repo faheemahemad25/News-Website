@@ -1,4 +1,4 @@
-# list Filters ⌛
+# Project Name : News Website
 click to see https://faheemahemad25.github.io/News-Website/
 <br>
 <br>

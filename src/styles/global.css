@@ -1,0 +1,68 @@
+* { /* 📗🔖 this is called universal Selector */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*! 📗🔖 this is called :root{} PseudoClass Selector. like other  Pseudo-class selector :hover{} :active{} etc.*/
+:root {
+    /* 1. Blue website theme */
+    /*! 📗🔖 this is called CSS VARIABLE we declare css variable with -- two hypen */
+    --background-color: #f0f9ff;
+    --button-color: #0284c7;
+    --primary-text-color: #075985;
+    --secondary-text-color: #6baac1;
+    --text-gradient: linear-gradient(90deg, #075985, #0284c7);
+
+    /* 2. Purple theme website*/
+    /* --background-color: #faf5ff;
+     --primary-text-color: #6b21a8;
+     --secondary-text-color: #b083d1;
+     --button-color: #9333ea; 
+    --text-gradient: linear-gradient(90deg, #6b21a8, #9333ea);
+     */
+
+    /* 3. Green theme website*/
+    /* --background-color: #f0fdf4;
+   --primary-text-color: #166534;
+    --secondary-text-color: #75ad89;
+    --button-color: #16a34a; 
+    --text-gradient: linear-gradient(90deg, #166534, #16a34a); 
+     */
+
+    /* 4. Red theme website*/
+    /* --background-color: #fff1f2;
+     --primary-text-color: #9f1239;
+    --secondary-text-color: #d4869c;
+    --button-color: #e11d48; 
+    --text-gradient: linear-gradient(90deg, #9f1239, #e11d48); 
+    */
+
+}
+
+/*--------------- Common utility Classes ----------------- */
+
+.btn{
+    padding: 10px 15px;
+    background-color: var(--button-color);
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--primary-text-color);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* ----------------- Layout utilities Classes ------------------------- */
+
+.container{}
+.flex{}
+.flex-col{}
+.items-center{}

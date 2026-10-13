@@ -1,0 +1,27 @@
+.loading {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid var(--primary-text-color);
+    border-top-color: var(--button-color);
+
+    /* animation */
+    animation-name: spin;
+    animation-duration: 1s; /* by default animation-duration: 0s Means no animation will show. so this is must. */
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    /* so that it can be in center. i means 3 grid remove and expand me in all not just First one grid column squeeze me. */
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+
+/* Keyframe definition to rotate the spinner */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,45 @@
+.card{
+    border: 1px solid var(--secondary-text-color);
+}
+
+.card-img{
+    height: 200px;
+    /* width: 250px; */
+    /* overflow: hidden; */
+}
+
+.card-img img{
+    height: 100%;
+    width: 100%;
+    /*📗🔖 if img parent is inline then 100% concept not work so first explicity usko display: block; se block element bna do. <picture> or <span> etc. */
+    object-fit: cover;
+    /* in cover photo is croped but when img is already large and img box is small than it. but  */
+}
+
+.card-content{
+    display: grid;
+    gap: 15px;
+    padding: 15px 10px;
+}
+.card-title-url{
+    text-decoration: none;
+}
+.card-content-title{
+  color: var(--primary-text-color);
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+}
+.card-content-desc{
+ color: var(--secondary-text-color);
+}
+
+.card-content-title,
+.card-content-desc{
+    /* word-wrap: break-word; */ /* single word is large than div then it break that */
+    word-break: break-all;
+}
+
+.card-btn-fit{
+    width: fit-content;
+}

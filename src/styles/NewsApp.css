@@ -1,0 +1,221 @@
+
+/* ----------------- Header section ---------------- */
+
+header {
+    /* border: 2px solid blue; */
+    height: 75px;
+    background-color: var(--background-color); /* 📗🔖 this is called CSS VARIABLE consumer method. var(--variable-name) method is used to consume declared css variable. */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-menu-and-close-Icons-container {
+    display: none;
+}
+.close-btn {
+    display: none;
+}
+.menu-btn {
+    display: none;
+}
+ 
+
+/* ----------------- Nav section ---------------- */
+
+nav {
+    /* border: 5px solid green; */
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+.brandLogo {
+    background: var(--text-gradient);
+    /* Remember: for text gradient we use background insted of color second2nd. we have to use TWO more properties. */
+    background-clip: text;
+    color: transparent;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    gap: 15px;
+}
+
+ul>li {
+    list-style: none;
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.navbar-search {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    padding: 10px 15px;
+    font-size: 17px;
+    border: none;
+}
+
+
+/* ----------- top-tagline section ----------  */
+.top-tagline {
+    padding: 1rem 0rem;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--primary-text-color);
+}
+
+/* --------------- categoriesBtn section ------------------ */
+.categories-btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 1rem 0rem;
+}
+
+
+
+/* --------------------- card-conatiner --------------- */
+.card-container {
+    width: 80%;
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    padding: 1rem;
+    margin: auto;
+    /* border: 2px solid red; */
+}
+
+.error-message {
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+
+.loading-message {
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+
+.empty-message {
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+
+/* =================================================================
+               Responsive 
+====================================================================*/
+
+@media(max-width:768px) {
+
+    
+    /* ----------- Header/Nav responsive -------------- */
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+
+        background-color: var(--background-color);
+        /* background-color: rgba(255, 163, 163, 0.799); */
+
+        flex-direction: column-reverse;
+        justify-content: start;
+        gap: 10px;
+
+        z-index: 999;
+        padding: 75px 0;
+
+
+        transform: translateX(100%); /* hide the navbar */
+
+        
+        transition: all;
+        transition-duration: 0.5s;
+    }
+
+    .sidebar-open { 
+        transform: translateX(0%);
+    }
+
+    .sidebar-close {
+        transform: translateX(100%);
+    }
+
+    .navbar-categories {
+        /* border: 2px solid red; */
+        width: 100%;
+        flex-direction: column;
+        padding: 5px 10px;
+    }
+
+    .navbar-search {
+        /* border: 2px solid red; */
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        padding: 5px 10px;
+    }
+
+    /* --------------------------------------------- */
+    .header-menu-and-close-Icons-container {
+        display: block;
+        /* border: 2px solid red; */
+    }
+
+    .menu-btn {
+        display: block;
+
+        font-size: 40px;
+        color: var(--primary-text-color);
+    }
+
+    .close-btn {
+        display: block;
+
+        font-size: 40px;
+        color: var(--primary-text-color);
+
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        z-index: 9999;
+    }
+    
+
+    /* ----------- website responsive -------------- */
+    .top-tagline {
+        font-size: 25px;
+    }
+    .categories-btn-container {
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+
+    .card-container {
+        width: 100%;
+        display: grid;
+        /* grid-template-columns: repeat(3, 1fr); */
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        padding: 0.5rem;
+        margin: auto;
+        /* border: 2px solid red; */
+    }
+
+
+}
